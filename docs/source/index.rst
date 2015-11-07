@@ -3,13 +3,22 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. _index:
+   
 Welcome to Cairs Traffic and Alarms's documentation!
 ====================================================
 
-Contents:
+.. attention:: Traffic and Alarms, UTA, CAT, CTA documentation is avaliable here.
+
+Topics
+------
 
 .. toctree::
-   :maxdepth: 2
+   :titlesonly:
+    
+   installation/index
+   troubleshooting/index
+   userguide/index
 
 
 
