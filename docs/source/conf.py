@@ -95,6 +95,10 @@ exclude_patterns = []
 # output. They are ignored by default.
 #show_authors = False
 
+rst_epilog = """
+.. include:: /common/authors.txt
+"""
+
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 

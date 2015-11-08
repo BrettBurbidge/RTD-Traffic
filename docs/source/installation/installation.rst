@@ -1,9 +1,9 @@
-.. include:: /common/stub-topic.txt
+.. include:: /common/stub-variables.txt
 
 Installing |product| on Windows Server (2008 R2/2012)
 =====================================================
 
-.. By `Brett Burbidge`_
+Authors:  `Brett Burbidge`_
 
 Install IIS
 -----------
@@ -12,7 +12,7 @@ Install IIS
 * Add Web Server IIS Roll
 * Add the following Roll Services
 
- * .. image:: _static/IIS_Roll_Services.png
+ .. image:: _static/IIS_Roll_Services.png
  
 * Click Install
 * Restart the server 
@@ -119,13 +119,14 @@ The Cairs Connection
 
 .. note:: This is a one-way connection.  |product| only reads from the CallRecord table for reports, it does not write any data to Cairs.
 
-Add the cairs database connection string in two places
+Add the Cairs database connection string in two places
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. The Web.config file
+#. In IIS Settings
 
 	#. Open IIS, select Default Web Site, Select UTA, double click on Application Settings.
 	#. Edit CAIRS_CONNECTIONSTRING set Value to the cairs database connection string. 
 
-
+image of iis settings....
+ .. image:: _static/IIS_Application_Settings_CairsConnection.png
 

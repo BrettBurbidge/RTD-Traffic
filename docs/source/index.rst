@@ -18,7 +18,9 @@ Topics
     
    installation/index
    troubleshooting/index
+   howto/index
    userguide/index
+   adminguide/index
 
 
 

@@ -5,3 +5,4 @@ Installation
    :titlesonly:
 	
    installation
+   update
