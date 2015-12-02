@@ -5,10 +5,10 @@
 
 .. _index:
    
-Welcome to Cairs Traffic and Alarms's documentation!
+Traffic & Alarms's Docs!
 ====================================================
 
-.. attention:: Traffic and Alarms, UTA, CAT, CTA documentation is avaliable here.
+.. attention:: Traffic & Alarms, formerly known as UTA or CAT, documentation is avaliable here.  CTA is short for Cairs Traffic & Alarms.  For more information about Cairs please go to .. _a link: http://unique.net.
 
 Topics
 ------
