@@ -6,3 +6,6 @@ Updating |product|
 Authors:  `Brett Burbidge`_
 
 .. include:: /_static/stub-notice.txt
+
+How to updage |product|
+^^^^^^^^^^^^^^^^^^^^^^^
