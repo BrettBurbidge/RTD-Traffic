@@ -1,0 +1,392 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Teleboss Connection &mdash; UTA Docs 0.0.0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="UTA Docs 0.0.0.1 documentation" href="../../../index.html"/>
+        <link rel="up" title="Alarms" href="../index.html"/>
+        <link rel="prev" title="Contact Closures" href="../contact_closures/index.html"/> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> UTA Docs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../installation/index.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Admin Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../system.html">System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../general/index.html">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../traffic.html">Traffic</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Alarms</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../contact_closures/index.html">Contact Closures</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Teleboss Connection</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../index.html">UTA Docs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../../index.html">Admin Guide</a> &raquo;</li>
+      
+          <li><a href="../index.html">Alarms</a> &raquo;</li>
+      
+    <li>Teleboss Connection</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../_sources/admin_guide/alarms/teleboss_connection/index.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="teleboss-connection">
+<h1>Teleboss Connection<a class="headerlink" href="#teleboss-connection" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div></div></blockquote>
+<p id="id1">Authors:  <a class="reference external" href="https://github.com/brettburbidge">Brett Burbidge</a></p>
+<p>This example will demonstrate how to setup the connection between the Teleboss and the UTA to communicate via Simple Network Management Protocol (SNMP) using SNMP Traps.</p>
+<div class="section" id="assumptions">
+<h2>Assumptions<a class="headerlink" href="#assumptions" title="Permalink to this headline">¶</a></h2>
+<p>This section assumes the following setup is in place.</p>
+<ol class="arabic simple">
+<li>UTA server is installed and on the network</li>
+<li>A Teleboss is configured and on the same network as UTA</li>
+<li>The IP of the Teleboss and UTA server are known</li>
+<li>You understand Putty and how to login to the Teleboss using SSH.</li>
+</ol>
+<p>If one of the assumptions above is incorrect please follow other steps in this manual.</p>
+</div>
+<div class="section" id="connection-tests">
+<h2>Connection Tests<a class="headerlink" href="#connection-tests" title="Permalink to this headline">¶</a></h2>
+<p>We will ping the UTA server from the Teleboss and vice versa to test the connection.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Ping might not be enabled on the network firewalls. If you can run Putty on SSH from the UTA server to the Teleboss everything should be okay.  But this is a good test if Ping is enabled.</p>
+</div>
+</div></blockquote>
+<ol class="arabic simple">
+<li>Login to the Teleboss</li>
+<li>Type ping [ip address of UTA]</li>
+<li>Let the ping run then press Ctrl+c to stop the ping</li>
+</ol>
+<dl class="docutils">
+<dt>Like this:</dt>
+<dd><img alt="../../../_images/putty_ping.jpg" class="first" src="../../../_images/putty_ping.jpg" />
+<div class="last admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">if the ping is unresolved it might be that UTA and the Teleboss cannot talk to each other.</p>
+</div>
+</dd>
+</dl>
+<ol class="arabic simple">
+<li>Login to the UTA server and ping the Teleboss</li>
+</ol>
+<dl class="docutils">
+<dt>Like this:</dt>
+<dd><img alt="../../../_images/uta_ping.jpg" class="first last" src="../../../_images/uta_ping.jpg" />
+</dd>
+</dl>
+<p>If everything is successful move to the next section.</p>
+</div>
+<div class="section" id="teleboss-setup">
+<h2>Teleboss Setup<a class="headerlink" href="#teleboss-setup" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Login to the Teleboss</li>
+<li>Type the word setup and press the enter key</li>
+</ol>
+<p>You should see this:</p>
+<blockquote>
+<div><img alt="../../../_images/putty_login1.jpg" src="../../../_images/putty_login1.jpg" />
+</div></blockquote>
+<ol class="arabic simple">
+<li>Press F (Action Definitions)</li>
+<li>Press A (Hostname/IP Address 1)</li>
+<li>Enter the IP address of the UTA server and press the Enter key</li>
+</ol>
+<p>You should see something like this:</p>
+<blockquote>
+<div><img alt="../../../_images/putty_a1.jpg" src="../../../_images/putty_a1.jpg" />
+</div></blockquote>
+<p>10.10.0.6 is the IP of the UTA server</p>
+</div>
+<div class="section" id="uta-setup">
+<h2>UTA Setup<a class="headerlink" href="#uta-setup" title="Permalink to this headline">¶</a></h2>
+<p>We need to add a new Alarm Element for this Teleboss in UTA.  Follow the instructions below to create this new element.</p>
+<ol class="arabic simple">
+<li>Open UTA in a browser and login</li>
+<li>Add a new Alarm Element by going to Admin &gt; Alarm Elements &gt; New Element</li>
+</ol>
+<p>Example:</p>
+<blockquote>
+<div><img alt="../../../_images/new_alarm_element1.gif" src="../../../_images/new_alarm_element1.gif" />
+</div></blockquote>
+<p>Enter the Alarm Element (Teleboss) information:</p>
+<ol class="arabic simple">
+<li>Name (the name of the Teleboss)e</li>
+<li>Ip Address (the ip address of the Teleboss)</li>
+<li>Port (leave this blank)</li>
+<li>Community Name (leave this blank)</li>
+<li>Type (select Teleboss)</li>
+<li>Collector Port (leave this blank)</li>
+<li>Collection File Path (leave this blank)</li>
+<li>SNMP Version (select &#8216;one&#8217;)</li>
+<li>Click Save</li>
+</ol>
+<p>Your new Alarm Element should look something like this:</p>
+<blockquote>
+<div>..image:: images/uta_alarm_element.jpg</div></blockquote>
+</div>
+<div class="section" id="test-the-setup">
+<h2>Test the Setup<a class="headerlink" href="#test-the-setup" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Go back to the Teleboss and press the Enter button until you are out of the menu. (This may take multiple times)</li>
+<li>Type dotrap then press the Enter key.</li>
+<li>You should see a COMPLETE message in the Teleboss window. See below:</li>
+</ol>
+<blockquote>
+<div><img alt="../../../_images/teleboss_dotrap.jpg" src="../../../_images/teleboss_dotrap.jpg" />
+</div></blockquote>
+<p>Behind the scenes the Teleboss is sending a type 1 SNMP Trap to the IP address we setup earlier in Action Definitions/Hostname/IP Address 1.</p>
+<p>We need to see if this Trap made it to UTA.</p>
+<ol class="arabic simple">
+<li>Open UTA in a browser and login</li>
+<li>Navigate to Alarms/Traps</li>
+<li>You should see something similar to this:</li>
+</ol>
+<blockquote>
+<div><img alt="../../../_images/uta_traps.jpg" src="../../../_images/uta_traps.jpg" />
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you don&#8217;t see anything in the log please continue this troubleshooting guide below.</p>
+</div>
+</div>
+<div class="section" id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<p>You should only be here if the tests above did not work.</p>
+<div class="section" id="incorrect-alarm-element-configuration">
+<h3>Incorrect Alarm Element Configuration<a class="headerlink" href="#incorrect-alarm-element-configuration" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>In UTA go to Admin/System Log</li>
+<li>In Putty type dotrap again.</li>
+<li>Press the Search button in the Admin/System Log to see if there are any new results.</li>
+</ol>
+<p>If you see something like this:</p>
+<blockquote>
+<div><img alt="../../../_images/uta_trap_error1.jpg" src="../../../_images/uta_trap_error1.jpg" />
+</div></blockquote>
+<p>It means that your Alarm Element is not setup properly.  The IP address you have for your Alarm Element is probably incorrect.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">To fix this, edit your Alarm Element with the proper IP Address and do this test again.</p>
+</div>
+</div>
+<div class="section" id="incorrect-uta-ip-address">
+<h3>Incorrect UTA IP Address<a class="headerlink" href="#incorrect-uta-ip-address" title="Permalink to this headline">¶</a></h3>
+<p>It is possible that the IP Address you put into the Teleboss is incorrect.</p>
+<ol class="arabic simple">
+<li>On the UTA server open a cmd window and type ipconfig.  Remember or write down the IP address of the server.</li>
+<li>Go back to Putty and ensure the correct Teleboss is open.</li>
+<li>Type the word setup and press the enter key.</li>
+</ol>
+<p>You should see this:</p>
+<blockquote>
+<div><img alt="../../../_images/putty_login1.jpg" src="../../../_images/putty_login1.jpg" />
+</div></blockquote>
+<ol class="arabic simple">
+<li>Press F (Action Definitions)</li>
+<li>Press A (Hostname/IP Address 1)</li>
+<li>Enter the IP address of the UTA server and press the Enter key</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Try the dotrap test again and see if you get different results.</p>
+</div>
+</div>
+<div class="section" id="firewall-settings">
+<h3>Firewall Settings<a class="headerlink" href="#firewall-settings" title="Permalink to this headline">¶</a></h3>
+<p>If none of the steps above fixed the connection issues there could be firewalls preventing the communication.</p>
+<p>Check the firewalls on the UTA server and also on the network between the UTA and Teleboss.</p>
+<div class="admonition hint">
+<p class="first admonition-title">Hint</p>
+<p class="last">In order for SNMP to work port 162 UDP/TCP must be open.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../contact_closures/index.html" class="btn btn-neutral" title="Contact Closures" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Brett Burbidge.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

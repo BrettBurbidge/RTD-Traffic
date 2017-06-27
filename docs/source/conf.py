@@ -51,7 +51,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'UTA Docs'
-copyright = '2015, Brett Burbidge'
+copyright = '2017, Brett Burbidge'
 author = 'Brett Burbidge'
 
 # The version info for the project you're documenting, acts as replacement for
