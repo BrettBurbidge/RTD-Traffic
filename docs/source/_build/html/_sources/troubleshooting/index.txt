@@ -1,7 +1,0 @@
-Troubleshooting
--------------------
-
-.. toctree::
-   :titlesonly:
-	
-   troubleshooting
