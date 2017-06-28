@@ -16,4 +16,4 @@ Below describes how to export the |product| system logs.
 #. Enter a Start and End Date, Search text (optional) and Severity (optional).
 #. Select the Export button.
 
-.. image:: _static/UTA_Export_System_Log.png
+.. image:: images/UTA_Export_System_Log.png

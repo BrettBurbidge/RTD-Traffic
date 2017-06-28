@@ -6,4 +6,4 @@ By `Brett Burbidge`_
 Using Alarms
 ------------
 
-.. include:: /_static/stub-notice.txt
+.. include:: /common/stub-notice.txt

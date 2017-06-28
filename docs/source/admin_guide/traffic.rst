@@ -5,4 +5,4 @@ Traffic
 
 By `Brett Burbidge`_
 
-.. include:: /_static/stub-notice.txt
+.. include:: /common/stub-notice.txt

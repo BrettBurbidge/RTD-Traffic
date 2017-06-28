@@ -18,6 +18,7 @@ Topics
     
    installation/index
    admin_guide/index
+   watchers/index
 
 Indices and tables
 ==================

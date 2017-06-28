@@ -20,7 +20,7 @@ Install IIS
 |stub-icon| Run Amie (Pronounced Amy)
 -------------------------------------
 
-.. include:: /_static/stub-notice.txt
+.. include:: /common/stub-notice.txt
 
 Verify the following settings by following the steps below
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -1,5 +1,5 @@
-Admin Guide
------------
+Admin
+-----
 
 .. toctree::
    :titlesonly:
