@@ -103,6 +103,19 @@ Before we start looking at UTA **Monitors** lets configure the Teleboss and fill
 * Select option E (Alarm/Event Defintions)
 * Select option C (EventSensor Device Settings)
 
+This will show you a list of the Teleboss EventSensor modules installed in the Teleboss.  
+
+.. important:: It is very important!  !Muy Importante! The Alive column must have a Y.  If the Alive column has a N the EventSensor will NOT WORK!
+
+If Alive is set to Y, continue to the next section. Before we do anymore setup make sure that Alive is set to Y. To fix an EventSensor with Alive set to N follow the steps below. 
+
+* Select option B (or whatever card has an N in the Alive column)
+* Select option K (Clear settings for this EventSensor)
+* Press the enter button until you get out of the Setup menu in the Teleboss
+* Type Restart and press Enter
+
+After the Teleboss restarts the card should be Alive (Alive set to Y).
+
 .. image:: images/putty_c.jpg
 
 .. note:: If you don't have an C option here it means that the modules have not been installed or the device needs to be rebooted.
