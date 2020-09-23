@@ -4,7 +4,7 @@ Admin
 .. toctree::
    :titlesonly:
 	
-   voicesystems
-   general/index
+   voicesystems/index
+   logs/index
    traffic
    alarms/index
