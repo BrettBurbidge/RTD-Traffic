@@ -5,6 +5,7 @@ Admin
    :titlesonly:
 	
    voicesystems/index
+   devices/index
    logs/index
    traffic
    alarms/index
