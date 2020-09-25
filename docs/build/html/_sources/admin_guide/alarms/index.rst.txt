@@ -8,3 +8,4 @@ Alarms
    teleboss_connection/index
    no-data/index
    percent-full/index
+   alarmstream

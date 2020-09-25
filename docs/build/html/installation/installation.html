@@ -1,0 +1,370 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installing UTA &mdash; UTA Docs 1.0.7.2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Updating UTA" href="update.html" />
+    <link rel="prev" title="Installation" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> UTA Docs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.7.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Installation</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Installing UTA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="update.html">Updating UTA</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Admin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/index.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../watchers/index.html">Watchers</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UTA Docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Installation</a> &raquo;</li>
+        
+      <li>Installing UTA</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/installation/installation.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="installing-product">
+<h1>Installing UTA<a class="headerlink" href="#installing-product" title="Permalink to this headline">¶</a></h1>
+<p>Authors:  <a class="reference external" href="https://github.com/brettburbidge">Brett Burbidge</a></p>
+<div class="section" id="how-to-install-product">
+<h2>How to install UTA<a class="headerlink" href="#how-to-install-product" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<p>Download the installer by going to the FTP site to go #Down/UTA - Unique Traffic &amp; Alarms/Release and grab a copy of the version with the highest release number (UTA[version].zip).</p>
+<p>As of this writing the release version is UTA1.0.7.2.zip.</p>
+</div>
+<div class="section" id="database-install">
+<h2>Database Install<a class="headerlink" href="#database-install" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt>To prepare the UTA database follow the instructions below.</dt><dd><ol class="arabic simple">
+<li><p>Create a database in SQL Server called UTA.  Make sure that a user has access to this database. For example, use the same user as Cairs, CairsUser.</p></li>
+<li><p>Unzip the install files on a computer with access to the database sever or on the database server itself.</p></li>
+<li><p>Find the bat file called Update_UpdateDatabaseOnly.bat and edit the database connection string in that file.</p></li>
+<li><p>Save and Close the file then run it with PowerShell from a computer that has access to the database.  You will not need to run this as Administrator.</p></li>
+<li><p>After running you will se a message that says Database update finished! Database Update Finished Successfully!</p></li>
+<li><p>Database Install done!</p></li>
+</ol>
+</dd>
+</dl>
+</div>
+<div class="section" id="web-install">
+<h2>Web Install<a class="headerlink" href="#web-install" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt>To install the web portion of UTA follow the instructions below.</dt><dd><ol class="arabic simple">
+<li><p>Ensure IIS is installed and functional.  Use the same IIS components as Cairs.net.</p></li>
+<li><p>Unzip the install files on the Web Server.</p></li>
+<li><p>Create a new folder called UTA either on the C or E drive.</p></li>
+<li><p>Copy the folder contents of Application/Web and paste the folders and files to the new UTA folder.</p></li>
+<li><p>Open IIS expand ServerName &gt; Sites &gt; Default Web Site</p></li>
+<li><p>Right click Default Web Site and select Add Application</p></li>
+<li><p>In the Add Application dialog box follow these steps:</p>
+<ol class="arabic simple">
+<li><p>Alias: UTA</p></li>
+<li><p>Application Pool: DefaultAppPool</p></li>
+<li><p>Physical Path: The path to the UTA folder created above</p></li>
+</ol>
+</li>
+<li><p>In IIS Select the newly created UTA directory.</p></li>
+</ol>
+</dd>
+</dl>
+<p>Set the database connection string by opening Connection Strings under ASP.NET
+Open the sqlServer connection string and point it the database you created in a previous step</p>
+</div>
+<div class="section" id="forms-authentication-username-and-password">
+<h2>Forms authentication (Username and password)<a class="headerlink" href="#forms-authentication-username-and-password" title="Permalink to this headline">¶</a></h2>
+<p><em>I Suggest using Forms if this is the first time you set this up. It makes it easier to test everything.</em></p>
+<dl class="simple">
+<dt>Open the Authentication icon under IIS</dt><dd><ol class="arabic simple">
+<li><p>Enable Anonymous Authentication</p></li>
+<li><p>Enable Forms Authentication</p></li>
+<li><p>Disable all other options</p></li>
+</ol>
+</dd>
+</dl>
+<p>Go back to the main IIS Window and select Application Settings
+Set AUTHENTICATION_MODE to Forms</p>
+</div>
+<div class="section" id="windows-authentication-domain-user">
+<h2>Windows Authentication (domain/user)<a class="headerlink" href="#windows-authentication-domain-user" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt>Open the Authentication icon under IIS</dt><dd><ol class="arabic simple">
+<li><p>Enable Windows Authentication</p></li>
+<li><p>Disable all other options</p></li>
+</ol>
+</dd>
+</dl>
+<p>Go back to the main IIS Window and select Application Settings
+Set AUTHENTICATION_MODE to Windows</p>
+</div>
+<div class="section" id="for-certificate-authentication-cac">
+<h2>For Certificate Authentication (CAC)<a class="headerlink" href="#for-certificate-authentication-cac" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt>Open the Authentication icon under IIS</dt><dd><ol class="arabic simple">
+<li><p>Enable Anonymous Authentication</p></li>
+<li><p>Disable all other options</p></li>
+</ol>
+</dd>
+</dl>
+<p>Go back to the main IIS Window and select Application Settings
+Set AUTHENTICATION_MODE to Certificate</p>
+<dl class="simple">
+<dt>Open SSL Settings</dt><dd><ol class="arabic simple">
+<li><p>Require SSL</p></li>
+<li><p>Under Client Certificates set Require</p></li>
+<li><p>Apply the settings by pressing Apply on the right</p></li>
+</ol>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To test everything works go to a browser that has access to this web server or open the browser on this server and go to <a class="reference external" href="http://localhost/uta">http://localhost/uta</a> or <a class="reference external" href="http://computername/uta">http://computername/uta</a>
+The default username and password is: admin and b for the password.</p>
+</div>
+</div>
+<div class="section" id="service-install">
+<h2>Service Install<a class="headerlink" href="#service-install" title="Permalink to this headline">¶</a></h2>
+<p>To install the UTA service follow the instructions below</p>
+<dl class="simple">
+<dt>This can be installed on the web or app server as long as the server has access to the database.  If you are installing this for Alarms other devices on the network will need to communicate over SNMP to this server.  Just keep that in mind moving forward.</dt><dd><ol class="arabic simple">
+<li><p>Unzip the install files on the server.</p></li>
+<li><p>In the Application folder find the Installers folder and run the installer called UTAServiceInstaller.msi</p></li>
+<li><p>Go through the prompts and make sure to check Install for Everyone.</p></li>
+<li><p>Open Windows Explorer and navigate to the location of the UTA service. Normally this is in C:Program Files(x86)Unique CommunicationsUTA</p></li>
+<li><p>Find the named TrafficService.exe.config and open it for editing in notepad.</p></li>
+<li><p>On line 6 of this file is the connection string. Make sure the connection string is correct.  One way to do this is to copy the connection string out of the UTA Web.config file on the Web Server.</p></li>
+<li><p>If the customer wants to report on CAIRS Call Records enter the CAIRS_CONNECTIONSTRING value for the Cairs database.</p></li>
+<li><p>Go to Service Manager and start the service.</p></li>
+</ol>
+</dd>
+</dl>
+</div>
+<div class="section" id="test-service-installation">
+<h2>Test Service Installation<a class="headerlink" href="#test-service-installation" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt>Navigate to <a class="reference external" href="http://localhost/uta">http://localhost/uta</a> or <a class="reference external" href="http://computername/uta">http://computername/uta</a> enter admin for the password and b for the password.</dt><dd><ol class="arabic simple">
+<li><p>Open the Admin/System Log menu item</p></li>
+<li><p>You will see data in the table pertaining to starting services.  If you don’t please review the steps in the previous section.</p></li>
+</ol>
+</dd>
+</dl>
+</div>
+<div class="section" id="enable-product-to-aggregate-and-report-on-cairs-call-records">
+<h2>Enable UTA to Aggregate and report on Cairs Call Records<a class="headerlink" href="#enable-product-to-aggregate-and-report-on-cairs-call-records" title="Permalink to this headline">¶</a></h2>
+<p>In order to enable this functionality the Cairs connection string setting must be set in the web.config of UTA website and also in the app.config of the UTA Service.</p>
+<dl class="simple">
+<dt><strong>Web Configuration</strong></dt><dd><ol class="arabic simple">
+<li><p>Open IIS, select Default Web Site, Select UTA, double click on Application Settings.</p></li>
+<li><p>Edit CAIRS_CONNECTIONSTRING set Value to the cairs database connection string.</p></li>
+</ol>
+</dd>
+<dt><strong>Service Configuration</strong></dt><dd><ol class="arabic simple">
+<li><p>Go to the file location (1.0.x.xApplicationService)</p></li>
+<li><p>Open the TrafficService.exe.config file with notepad</p></li>
+<li><p>Edit CAIRS_CONNECTIONSTRING set the value to the cairs database connection string.</p></li>
+</ol>
+</dd>
+</dl>
+<p>The service will now aggregate the CDR collected by Cairs from the CallRecord table. Reports for each Cairs Switch will be available from the main Traffic window in UTA.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="update.html" class="btn btn-neutral float-right" title="Updating UTA" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Brett Burbidge
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

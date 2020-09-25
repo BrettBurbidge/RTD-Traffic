@@ -34,7 +34,7 @@ This will open the list of connections that exist on this Device. If there are n
 
 **FTP Local Directory**: This is the local directory (Where |product| Service is running) where the files will be downloaded to.
 
-**FTP File Name Match**: If the file name on the remote SFTP site contains this text it will be collected. Here are some examples: .txt or .dat or a file prefix like cdr_ 
+**FTP File Name Match**: If the file name on the remote SFTP site contains this text it will be collected. Here are some examples: .txt or .dat or a file prefix like cdr _ 
 
 **After Download Action**: This setting determines what happens to the files after they are downloaded. Move is the default. Delete: will remove the remote file. Move: moves the remote file into a folder called Done.
 

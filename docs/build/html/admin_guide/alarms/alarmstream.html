@@ -1,0 +1,288 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Alarm Stream &mdash; UTA Docs 1.0.7.2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="User Guide" href="../../user_guide/index.html" />
+    <link rel="prev" title="Percent Full Alarm" href="percent-full/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> UTA Docs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.7.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../installation/index.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Admin</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../voicesystems/index.html">Voice Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../devices/index.html">Devices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../logs/index.html">Event &amp; System Logs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../traffic.html">Traffic</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Alarms</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="contact_closures/index.html">Contact Closures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teleboss_connection/index.html">Teleboss Connection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="no-data/index.html">No Data Alarm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="percent-full/index.html">Percent Full Alarm</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Alarm Stream</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../user_guide/index.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../watchers/index.html">Watchers</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">UTA Docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Admin</a> &raquo;</li>
+        
+          <li><a href="index.html">Alarms</a> &raquo;</li>
+        
+      <li>Alarm Stream</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/admin_guide/alarms/alarmstream.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="alarm-stream">
+<h1>Alarm Stream<a class="headerlink" href="#alarm-stream" title="Permalink to this headline">¶</a></h1>
+<p>Authors:  <a class="reference external" href="https://github.com/brettburbidge">Brett Burbidge</a></p>
+<div class="section" id="streaming-alarm-page">
+<h2>Streaming Alarm Page<a class="headerlink" href="#streaming-alarm-page" title="Permalink to this headline">¶</a></h2>
+<p>Navigate to Alarms/Alarm Stream. This will show a summary view of all the alarms received in a time frame.</p>
+<img alt="../../_images/alarmstreampage.png" src="../../_images/alarmstreampage.png" />
+</div>
+<div class="section" id="alarm-details-page">
+<h2>Alarm Details Page<a class="headerlink" href="#alarm-details-page" title="Permalink to this headline">¶</a></h2>
+<p>Shows the details of a specific alarm.  Click on the Detail link in the previous page to see this.</p>
+<img alt="../../_images/alarmstreamconnectoindetails.png" src="../../_images/alarmstreamconnectoindetails.png" />
+<p>Streaming Alarm Page
+Shows alarms as they are streaming in for each switch. They can select search criteria and also pick the Device and Site as filters.  To get to this page click the View Live Alarm Stream link.</p>
+<img alt="../../_images/alarmstreamlive.png" src="../../_images/alarmstreamlive.png" />
+</div>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt><strong>Add a Device</strong></dt><dd><ol class="arabic simple">
+<li><p>Select Admin and select Devices</p></li>
+<li><p>Select New Device</p>
+<ol class="arabic simple">
+<li><p>Note: A Device in this case is a Teleboss.  Each Teleboss in Rota will need to be added as a Device and each will need one connection for Alarms.</p></li>
+</ol>
+</li>
+<li><p>Determine which Teleboss to add first and in the Name field add the name of the Teleboss.</p></li>
+<li><p>In the Site field select the site you just added.</p></li>
+<li><p>Press the Save button.</p></li>
+</ol>
+</dd>
+</dl>
+<p><strong>Add a new Connection</strong></p>
+<dl class="simple">
+<dt>Connections are the way that Devices connect and gather information.</dt><dd><ol class="arabic simple">
+<li><p>In the Device selected above click on the Connections button</p></li>
+<li><p>Select the New Connection button</p></li>
+<li><p>Name: [Device Name] TCP Connection</p></li>
+<li><p>Collection Type: Alarms</p></li>
+<li><p>Add Connection: TCP Client</p></li>
+<li><p>IP Address: The IP of the Teleboss</p></li>
+<li><p>Port: The port of the serial file we are trying to read data from. Typically this is 220x with x being the file number.</p></li>
+<li><p>A new command will automatically be created for this type of connection.</p></li>
+<li><p>Click Save and you are done creating a Device!!</p></li>
+</ol>
+</dd>
+</dl>
+<p>Do this for the remaining Telebosses on site. [this might be done already]</p>
+<p>We will NOT be creating connections for Traffic Data.  Traffic data will be read out of the Cairs Call</p>
+<img alt="../../_images/alarmstreamconnectoindetails.png" src="../../_images/alarmstreamconnectoindetails.png" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../user_guide/index.html" class="btn btn-neutral float-right" title="User Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="percent-full/index.html" class="btn btn-neutral float-left" title="Percent Full Alarm" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Brett Burbidge
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

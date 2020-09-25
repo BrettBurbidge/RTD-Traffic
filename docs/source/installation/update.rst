@@ -7,5 +7,5 @@ Authors:  `Brett Burbidge`_
 
 .. include:: /common/stub-notice.txt
 
-How to updage |product|
+How to update |product|
 ^^^^^^^^^^^^^^^^^^^^^^^
