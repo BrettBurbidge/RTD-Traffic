@@ -9,3 +9,5 @@ Admin
    logs/index
    traffic
    alarms/index
+   users
+   dataprotection

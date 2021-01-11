@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>User Guide &mdash; UTA Docs 1.0.7.2 documentation</title>
+  <title>Users &mdash; UTA Docs 1.0.7.2 documentation</title>
   
 
   
@@ -37,8 +37,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Traffic" href="traffic.html" />
-    <link rel="prev" title="Users" href="../admin_guide/dataprotection.html" /> 
+    <link rel="next" title="Users" href="dataprotection.html" />
+    <link rel="prev" title="Alarm Stream" href="alarms/alarmstream.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -89,12 +89,17 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Admin</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">User Guide</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Admin</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="voicesystems/index.html">Voice Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="devices/index.html">Devices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logs/index.html">Event &amp; System Logs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="traffic.html">Traffic</a></li>
-<li class="toctree-l2"><a class="reference internal" href="alarms.html">Alarms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="alarms/index.html">Alarms</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataprotection.html">Users</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/index.html">User Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../watchers/index.html">Watchers</a></li>
 </ul>
 
@@ -142,13 +147,15 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>User Guide</li>
+          <li><a href="index.html">Admin</a> &raquo;</li>
+        
+      <li>Users</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/user_guide/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/admin_guide/users.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -161,23 +168,20 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="user-guide">
-<h1>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="traffic.html">Traffic</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alarms.html">Alarms</a></li>
-</ul>
+  <div class="section" id="users">
+<h1>Users<a class="headerlink" href="#users" title="Permalink to this headline">¶</a></h1>
+<p>By <a class="reference external" href="https://github.com/brettburbidge">Brett Burbidge</a></p>
+<div class="section" id="temporary-user-accounts">
+<h2>Temporary User Accounts<a class="headerlink" href="#temporary-user-accounts" title="Permalink to this headline">¶</a></h2>
+<p>Temporary user accounts are not permitted in UTA.</p>
 </div>
-<div class="section" id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>This document is a brief introduction to the Unique Communications Traffic &amp; Alarms (UTA) system.  It is intended for internal employees, customers and anyone with general questions about the UTA system.  This document is an overview of the functionality of both the traffic and alarm systems.</p>
+<div class="section" id="non-repudiation-services">
+<h2>Non-Repudiation Services<a class="headerlink" href="#non-repudiation-services" title="Permalink to this headline">¶</a></h2>
+<p>Non-repudiation services are not defined as part of the application design.</p>
 </div>
-<div class="section" id="functionality">
-<h2>Functionality<a class="headerlink" href="#functionality" title="Permalink to this headline">¶</a></h2>
-<p>UTA is split up into two primary systems traffic and alarms.</p>
-<p>The traffic portion queries the telephone switch for traffic reports, stores that information and builds easy to read reports based on that data.</p>
-<p>The alarm system listens for specific messages from pre-configured network elements and notifies technical personnel of element status.</p>
+<div class="section" id="centralized-logging">
+<h2>Centralized Logging<a class="headerlink" href="#centralized-logging" title="Permalink to this headline">¶</a></h2>
+<p>UTA does not provide centralized logging. The user accept the risk for not utilizing a centralized logging solution.</p>
 </div>
 </div>
 
@@ -189,10 +193,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="traffic.html" class="btn btn-neutral float-right" title="Traffic" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="dataprotection.html" class="btn btn-neutral float-right" title="Users" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../admin_guide/dataprotection.html" class="btn btn-neutral float-left" title="Users" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="alarms/alarmstream.html" class="btn btn-neutral float-left" title="Alarm Stream" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

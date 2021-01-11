@@ -1,0 +1,21 @@
+.. include:: /common/stub-variables.txt
+
+Data Protection
+===============
+
+By `Brett Burbidge`_
+
+Data Protection Requirements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Failure to protect organizational information from data mining may result in a compromise of information. In order to assign the appropriate data protections, application data must be identified and then protection requirements assigned. Access to sensitive data and sensitive data objects should be restricted to those authorized to access the data. Examples of sensitive data include but are not limited to; Social Security Numbers, Personally Identifiable Information, or any other data that is has been identified as being sensitive in nature by the data owner. Data storage objects include, for example, databases, database records, and database fields. Data mining prevention and detection techniques include, for example: limiting the types of responses provided to database queries; limiting the number/frequency of database queries to increase the work factor needed to determine the contents of such databases; and notifying organizational personnel when atypical database queries or accesses occur. Protection methods include but are not limited to data encryption, Role-Based Access Controls and access authentication.
+
+Protection Procedures
+^^^^^^^^^^^^^^^^^^^^^
+Ensure that only the proper users are set to have the Admin Role. 
+
+Personal data shall be collected
+ #. For specified, explicit and legitimate purposes and not further processed in a manner that is incompatible with those purposes; further processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes shall not be considered to be incompatible with the initial purposes.
+ #. Adequate, relevant and limited to what is necessary in relation to the purposes for which they are processed
+ #. Accurate and, where necessary, kept up to date; every reasonable step must be taken to ensure that personal data that are inaccurate, having regard to the purposes for which they are processed, are erased or rectified without delay
+ #.	kept in a form which permits identification of data subjects for no longer than is necessary for the purposes for which the personal data are processed; personal data may be stored for longer periods insofar as the personal data will be processed solely for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes subject to implementation of the appropriate technical and organisational measures required by the GDPR in order to safeguard the rights and freedoms of individuals.
+ #.	processed in a manner that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organizational measures.
