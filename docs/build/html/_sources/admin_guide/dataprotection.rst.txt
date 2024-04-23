@@ -1,7 +1,7 @@
 .. include:: /common/stub-variables.txt
 
-Users
-=====
+Data Protection
+===============
 
 By `Brett Burbidge`_
 
